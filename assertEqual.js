@@ -7,7 +7,9 @@ if(actual === expected){
 }
 
 };
-module.exports = assertEqual;
+
+
 
 //console.log(`Assertion Passed: [${actual}] === [${expected}]` + assertEqual(actual, expected));
 //console.log("Assertion Failed: [actual] !== [expected]");
+module.export= assertEqual;

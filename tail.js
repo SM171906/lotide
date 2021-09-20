@@ -8,3 +8,4 @@ function tail(data){
   const result = tail(["Hello", "Lighthouse", "Labs"]);
 
 console.log(assertEqual(result, ["Lighthouse", "Labs"])); 
+module.exports = tail;

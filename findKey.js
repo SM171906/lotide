@@ -12,23 +12,23 @@ const assertEqual = function(actual, expected) {
 
   const findKeys = function(object, callback){
     let firstKey = Object.keys(object);
-    for(let i =0; i <firstKey.length; i++){
-     if(callback(object[firstKey[i]])){
+    for(let i =0; i < firstKey.length; i++){
+     if (callback(object[firstKey[i]])){
       console.log(firstKey[i]);
       return firstKey[i];
      } 
-    }
-    return ;
+    } 
+    return;
   }
 
-  findKeys({
-    "Blue Hill": { stars: 1 },
-    "Akaleri":   { stars: 3 },
-    "noma":      { stars: 2 },
-    "elBulli":   { stars: 3 },
-    "Ora":       { stars: 2 },
-    "Akelarre":  { stars: 3 }
-  }, x => x.stars === 2) // => "noma"
+  // findKeys({
+  //   "Blue Hill": { stars: 1 },
+  //   "Akaleri":   { stars: 3 },
+  //   "noma":      { stars: 2 },
+  //   "elBulli":   { stars: 3 },
+  //   "Ora":       { stars: 2 },
+  //   "Akelarre":  { stars: 3 }
+  // }, x => x.stars === 2) // => "noma"
 
   let object = {
     "Blue Hill": { stars: 1 },
